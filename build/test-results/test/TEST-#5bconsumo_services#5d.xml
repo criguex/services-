@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="[consumo_services]" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-04-10T23:34:14" hostname="DESKTOP-JSEMBU6" time="1.81">
+  <properties/>
+  <testcase name="[2:14] consumo de servicio" classname="[consumo_services]" time="1.81"/>
+  <system-out><![CDATA[18:34:14.877 [Test worker] DEBUG org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: karate
+18:34:14.896 [Test worker] DEBUG org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
+18:34:14.908 [Test worker] DEBUG com.intuit.karate - request:
+1 > GET https://reqres.in/api/users2
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: reqres.in
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_221)
+
+18:34:14.922 [Test worker] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection request: [route: {s}->https://reqres.in:443][total kept alive: 0; route allocated: 0 of 5; total allocated: 0 of 10]
+18:34:15.016 [Test worker] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection leased: [id: 0][route: {s}->https://reqres.in:443][total kept alive: 0; route allocated: 1 of 5; total allocated: 1 of 10]
+18:34:15.026 [Test worker] DEBUG org.apache.http.impl.execchain.MainClientExec - Opening connection {s}->https://reqres.in:443
+18:34:15.153 [Test worker] DEBUG org.apache.http.impl.conn.DefaultHttpClientConnectionOperator - Connecting to reqres.in/104.27.134.11:443
+18:34:15.153 [Test worker] DEBUG org.apache.http.conn.ssl.SSLConnectionSocketFactory - Connecting socket to reqres.in/104.27.134.11:443 with timeout 30000
+18:34:15.337 [Test worker] DEBUG org.apache.http.conn.ssl.SSLConnectionSocketFactory - Enabled protocols: [TLSv1, TLSv1.1, TLSv1.2]
+18:34:15.337 [Test worker] DEBUG org.apache.http.conn.ssl.SSLConnectionSocketFactory - Enabled cipher suites:[TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA384, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384, TLS_RSA_WITH_AES_256_CBC_SHA256, TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA384, TLS_ECDH_RSA_WITH_AES_256_CBC_SHA384, TLS_DHE_RSA_WITH_AES_256_CBC_SHA256, TLS_DHE_DSS_WITH_AES_256_CBC_SHA256, TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA, TLS_RSA_WITH_AES_256_CBC_SHA, TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA, TLS_ECDH_RSA_WITH_AES_256_CBC_SHA, TLS_DHE_RSA_WITH_AES_256_CBC_SHA, TLS_DHE_DSS_WITH_AES_256_CBC_SHA, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA256, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_DSS_WITH_AES_128_CBC_SHA256, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_DSS_WITH_AES_128_CBC_SHA, TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, TLS_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDH_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDH_RSA_WITH_AES_256_GCM_SHA384, TLS_DHE_RSA_WITH_AES_256_GCM_SHA384, TLS_DHE_DSS_WITH_AES_256_GCM_SHA384, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_DSS_WITH_AES_128_GCM_SHA256, TLS_EMPTY_RENEGOTIATION_INFO_SCSV]
+18:34:15.337 [Test worker] DEBUG org.apache.http.conn.ssl.SSLConnectionSocketFactory - Starting handshake
+18:34:15.529 [Test worker] DEBUG org.apache.http.conn.ssl.SSLConnectionSocketFactory - Secure session established
+18:34:15.529 [Test worker] DEBUG org.apache.http.conn.ssl.SSLConnectionSocketFactory -  negotiated protocol: TLSv1.2
+18:34:15.529 [Test worker] DEBUG org.apache.http.conn.ssl.SSLConnectionSocketFactory -  negotiated cipher suite: TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256
+18:34:15.529 [Test worker] DEBUG org.apache.http.conn.ssl.SSLConnectionSocketFactory -  peer principal: CN=sni.cloudflaressl.com, O="Cloudflare, Inc.", L=San Francisco, ST=CA, C=US
+18:34:15.530 [Test worker] DEBUG org.apache.http.conn.ssl.SSLConnectionSocketFactory -  peer alternative names: [*.reqres.in, reqres.in, sni.cloudflaressl.com]
+18:34:15.530 [Test worker] DEBUG org.apache.http.conn.ssl.SSLConnectionSocketFactory -  issuer principal: CN=CloudFlare Inc ECC CA-2, O="CloudFlare, Inc.", L=San Francisco, ST=CA, C=US
+18:34:15.536 [Test worker] DEBUG org.apache.http.impl.conn.DefaultHttpClientConnectionOperator - Connection established 192.168.0.18:60078<->104.27.134.11:443
+18:34:15.536 [Test worker] DEBUG org.apache.http.impl.conn.DefaultManagedHttpClientConnection - http-outgoing-0: set socket timeout to 30000
+18:34:15.537 [Test worker] DEBUG org.apache.http.impl.execchain.MainClientExec - Executing request GET /api/users2 HTTP/1.1
+18:34:15.537 [Test worker] DEBUG org.apache.http.impl.execchain.MainClientExec - Target auth state: UNCHALLENGED
+18:34:15.538 [Test worker] DEBUG org.apache.http.impl.execchain.MainClientExec - Proxy auth state: UNCHALLENGED
+18:34:15.541 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 >> GET /api/users2 HTTP/1.1
+18:34:15.541 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 >> Host: reqres.in
+18:34:15.541 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 >> Connection: Keep-Alive
+18:34:15.541 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 >> User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_221)
+18:34:15.541 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 >> Accept-Encoding: gzip,deflate
+18:34:15.542 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 >> "GET /api/users2 HTTP/1.1[\r][\n]"
+18:34:15.542 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 >> "Host: reqres.in[\r][\n]"
+18:34:15.542 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 >> "Connection: Keep-Alive[\r][\n]"
+18:34:15.542 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 >> "User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_221)[\r][\n]"
+18:34:15.542 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 >> "Accept-Encoding: gzip,deflate[\r][\n]"
+18:34:15.542 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 >> "[\r][\n]"
+18:34:15.585 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "HTTP/1.1 200 OK[\r][\n]"
+18:34:15.585 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "Date: Fri, 10 Apr 2020 23:34:17 GMT[\r][\n]"
+18:34:15.585 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "Content-Type: application/json; charset=utf-8[\r][\n]"
+18:34:15.585 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "Transfer-Encoding: chunked[\r][\n]"
+18:34:15.586 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "Connection: keep-alive[\r][\n]"
+18:34:15.586 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "Set-Cookie: __cfduid=d5aa41d0b6611a5a6fa68f3a0df517fe01586561657; expires=Sun, 10-May-20 23:34:17 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure[\r][\n]"
+18:34:15.586 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "X-Powered-By: Express[\r][\n]"
+18:34:15.586 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "Access-Control-Allow-Origin: *[\r][\n]"
+18:34:15.586 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "Etag: W/"301-ijGNEim/mAI7LpbQIXyQc2bjt+k"[\r][\n]"
+18:34:15.586 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "Via: 1.1 vegur[\r][\n]"
+18:34:15.586 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "Cache-Control: max-age=14400[\r][\n]"
+18:34:15.586 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "CF-Cache-Status: HIT[\r][\n]"
+18:34:15.586 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "Age: 1568[\r][\n]"
+18:34:15.586 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"[\r][\n]"
+18:34:15.587 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "Vary: Accept-Encoding[\r][\n]"
+18:34:15.587 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "Server: cloudflare[\r][\n]"
+18:34:15.587 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "CF-RAY: 582047145b94f25f-BOG[\r][\n]"
+18:34:15.587 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "Content-Encoding: gzip[\r][\n]"
+18:34:15.587 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "[\r][\n]"
+18:34:15.587 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "196[\r][\n]"
+18:34:15.587 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "[0x1f][0x8b][0x8][0x0][0x0][0x0][0x0][0x0][0x0][0x3]m[0xd1][0xc1][0x8e][0xdb] [0x10][0x6][0xe0]WA[0xd3]+[0xd9][0x18][0x8c][0xed][0x84][0xdb]&M_[0xa0][0x87][0x1e][0xaa]jE[0xed][0xb1]c[0x85][0x80][0x17][0x86][0xa4]Q[0x94]w[0xaf][0xea]T^[0xaf][0xe4][0x1b]h[0xf8]?[0xfd][0xc0][0x1d][0x6][0xd3]!h[0xc1]a[0xc0][0xf0][0xf6][0xdc][0x94][0x1c][0xc8][0x93][0xb1][0xa0][0x85][0xfc][0xbf][0x1c]'[0x11][0xb4][0xe4][0xd0][0x18]2[0xa0]]]>&#x7f;<![CDATA[[0xde][0xa1]o[0xc6][0x9c]3g[0x4][\r]5[0x86]d[0xd1]8[0xe0]pC[0x13]@[0xcb],[0xcb]8[0xd4][0xde][0xfa][0x0][0x1a][0xbe]l7;[0xf9]U[0x0][0x87][0xc1]8[0xf2][0xe][0xdf].[0xc6][0xa6]]]>&#x7f;<![CDATA[AQ[0xac]T&3x[0xf0]')'[0xb2]M[0xf5]1[0xf6][0x86][0x5][0x1f]q[0xce][0x8a][0x19][0xbb][0xaf]T^[0x15]Kl[0xb5][0x92]Y.&6[0x9f]X[\n]"
+18:34:15.588 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "[0x9]Y[0xc0]fN[0xca][0x19][0xb9][0xfb]&[0xb6][0xb9]\"[0xb7]+Q[0x96]j"[0xd5]D[0x9a][0xf7]dX<[0xdd][0xe6]d>#[0xab][0xdd]^[0xed][0xd5][0x12][0xa9]Vj#>Z[0x16][0x1f]-[0xfb][0xe][0x83][0xed][0xed]'S[0xcd][0xcc][0x83],6[0xf9]a[0xf9][0xe6]B[0x15][0xe5]d[0x96][0x93][0xf9][0xdb]&d[0x94][0xc2]{[0xf2][0xfd][0xe7]'-fp[0x91][0xef][0xb2][0xd7][0xc3][0xf2]O[0x15]RT[0xf0][0xf8][0xc5][0xc1]4[0xa0][0xef]P[0xfb][0xf3]`[0xdc][\r]4|'C)[0xee]}[0x83][0xec][0x7][0xe2]i[0xac][0x9d][0x82][0x5][\r]G[0xa2]A[0xaf][0xd7]q<P[0xfb][0x6]_|[0xe8][0xd6][0xc0][0x81][0xf0][0xf][0x81][0x86]Wv[0x1d][0x3][0xcc][0xe1]5Z$[0xc2][0xc0]Z_[0xa7][0xd8][0xbb][0x8e]y[0xc7][0xa2]o[0xe9]j[0x2][0xb2][0x6]/h[0xfd]pFG[0x9c][0xf5][0xae][\r]&RH5[0xa5][0x80][0x9c][0xd1][0x11]Y[0xc4]p[0xc1][0xc0][0xd9][0x80][0xa1][0xf5][0xe1]l\[0x8d][0x9c][0x19][0xd7]<[0x87]d[0xea][0x13]C[0xd7]0[0xdf]2:[0xf6][0xae][0x8b]/[0xf0]x[0xfc][0x5]sx[0xc7][0x89][0x1][0x3][0x0][0x0][\r][\n]"
+18:34:15.593 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 << HTTP/1.1 200 OK
+18:34:15.593 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 << Date: Fri, 10 Apr 2020 23:34:17 GMT
+18:34:15.593 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 << Content-Type: application/json; charset=utf-8
+18:34:15.593 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 << Transfer-Encoding: chunked
+18:34:15.593 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 << Connection: keep-alive
+18:34:15.593 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 << Set-Cookie: __cfduid=d5aa41d0b6611a5a6fa68f3a0df517fe01586561657; expires=Sun, 10-May-20 23:34:17 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure
+18:34:15.593 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 << X-Powered-By: Express
+18:34:15.598 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 << Access-Control-Allow-Origin: *
+18:34:15.598 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 << Etag: W/"301-ijGNEim/mAI7LpbQIXyQc2bjt+k"
+18:34:15.598 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 << Via: 1.1 vegur
+18:34:15.598 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 << Cache-Control: max-age=14400
+18:34:15.598 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 << CF-Cache-Status: HIT
+18:34:15.598 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 << Age: 1568
+18:34:15.599 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 << Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+18:34:15.599 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 << Vary: Accept-Encoding
+18:34:15.599 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 << Server: cloudflare
+18:34:15.599 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 << CF-RAY: 582047145b94f25f-BOG
+18:34:15.599 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 << Content-Encoding: gzip
+18:34:15.609 [Test worker] DEBUG org.apache.http.impl.execchain.MainClientExec - Connection can be kept alive indefinitely
+18:34:15.627 [Test worker] DEBUG org.apache.http.client.protocol.ResponseProcessCookies - Cookie accepted [__cfduid="d5aa41d0b6611a5a6fa68f3a0df517fe01586561657", version:0, domain:reqres.in, path:/, expiry:Sun May 10 18:34:17 COT 2020]
+18:34:15.637 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "0[\r][\n]"
+18:34:15.637 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "[\r][\n]"
+18:34:15.637 [Test worker] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection [id: 0][route: {s}->https://reqres.in:443] can be kept alive indefinitely
+18:34:15.638 [Test worker] DEBUG org.apache.http.impl.conn.DefaultManagedHttpClientConnection - http-outgoing-0: set socket timeout to 0
+18:34:15.638 [Test worker] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection released: [id: 0][route: {s}->https://reqres.in:443][total kept alive: 1; route allocated: 1 of 5; total allocated: 1 of 10]
+18:34:15.638 [Test worker] DEBUG com.intuit.karate - response time in milliseconds: 711,32
+1 < 200
+1 < Access-Control-Allow-Origin: *
+1 < Age: 1568
+1 < CF-Cache-Status: HIT
+1 < CF-RAY: 582047145b94f25f-BOG
+1 < Cache-Control: max-age=14400
+1 < Connection: keep-alive
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Fri, 10 Apr 2020 23:34:17 GMT
+1 < Etag: W/"301-ijGNEim/mAI7LpbQIXyQc2bjt+k"
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < Server: cloudflare
+1 < Set-Cookie: __cfduid=d5aa41d0b6611a5a6fa68f3a0df517fe01586561657; expires=Sun, 10-May-20 23:34:17 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure
+1 < Transfer-Encoding: chunked
+1 < Vary: Accept-Encoding
+1 < Via: 1.1 vegur
+1 < X-Powered-By: Express
+{"page":1,"per_page":6,"total":12,"total_pages":2,"data":[{"id":1,"name":"cerulean","year":2000,"color":"#98B2D1","pantone_value":"15-4020"},{"id":2,"name":"fuchsia rose","year":2001,"color":"#C74375","pantone_value":"17-2031"},{"id":3,"name":"true red","year":2002,"color":"#BF1932","pantone_value":"19-1664"},{"id":4,"name":"aqua sky","year":2003,"color":"#7BC4C4","pantone_value":"14-4811"},{"id":5,"name":"tigerlily","year":2004,"color":"#E2583E","pantone_value":"17-1456"},{"id":6,"name":"blue turquoise","year":2005,"color":"#53B0AE","pantone_value":"15-5217"}],"ad":{"company":"StatusCode Weekly","url":"http://statuscode.org/","text":"A weekly newsletter focusing on software development, infrastructure, the server, performance, and the stack end of things."}}
+
+18:34:15.775 [Test worker] INFO com.intuit.karate - [print] LA RESPUES DE DATOS ES.....cerulean
+18:34:15.810 [Test worker] DEBUG com.jayway.jsonpath.internal.path.CompiledPath - Evaluating path: $
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
